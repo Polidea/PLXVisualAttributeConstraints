@@ -8,13 +8,13 @@ Pod::Spec.new do |spec|
     :type => 'BSD',
     :file => 'BSD.LICENSE'
   }
-  spec.authors = {
-    'Polidea' => 'kamil.jaworski@polidea.com'
+  spec.author = {
+    "Polidea" => "kamil.jaworski@polidea.com"
   },
-  spec.platform = :ios, "6.0"
+  spec.platform = :ios, '6.0'
   spec.source = {
-    :git => 'https://github.com/Polidea/PLXVisualAttributeConstraints.git',
-    :tag => '1.0.0'
+    :git => "https://github.com/Polidea/PLXVisualAttributeConstraints.git",
+    :tag => spec.version.to_s 
   }
   spec.source_files = 'PLXVisualAttributeConstraints/PLXVisualAttributeConstraints/**/*.{h,m}'
   spec.requires_arc = true
