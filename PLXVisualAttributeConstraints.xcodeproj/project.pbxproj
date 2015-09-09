@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187507AC179817CB00463B60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187507AB179817CB00463B60 /* UIKit.framework */; };
+		187507AE179817CB00463B60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187507AD179817CB00463B60 /* Foundation.framework */; };
+		187507B0179817CB00463B60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187507AF179817CB00463B60 /* CoreGraphics.framework */; };
+		673DC4DE1B9F1E9E005A5403 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 673DC4BF1B9F1E9E005A5403 /* Default-568h@2x.png */; };
+		673DC4DF1B9F1E9E005A5403 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 673DC4C01B9F1E9E005A5403 /* Default.png */; };
+		673DC4E01B9F1E9E005A5403 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 673DC4C11B9F1E9E005A5403 /* Default@2x.png */; };
+		673DC4E11B9F1E9E005A5403 /* guy.png in Resources */ = {isa = PBXBuildFile; fileRef = 673DC4C31B9F1E9E005A5403 /* guy.png */; };
+		673DC4E21B9F1E9E005A5403 /* PLXDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4C51B9F1E9E005A5403 /* PLXDemoView.m */; };
+		673DC4E31B9F1E9E005A5403 /* PLXDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4C71B9F1E9E005A5403 /* PLXDemoViewController.m */; };
+		673DC4E41B9F1E9E005A5403 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 673DC4C91B9F1E9E005A5403 /* InfoPlist.strings */; };
+		673DC4E51B9F1E9E005A5403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4CB1B9F1E9E005A5403 /* main.m */; };
+		673DC4E61B9F1E9E005A5403 /* PLXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4CD1B9F1E9E005A5403 /* PLXAppDelegate.m */; };
+		673DC4E71B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4D21B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.m */; };
+		673DC4E81B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4D41B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.m */; };
+		673DC4E91B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4D71B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.m */; };
+		673DC4EA1B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4D91B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.m */; };
+		673DC4EB1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4DB1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.m */; };
+		673DC4FD1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4AA1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.m */; };
+		673DC4FE1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4AC1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.m */; };
+		673DC4FF1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLexerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4AF1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpec.m */; };
+		673DC5001B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLibSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4B01B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpec.m */; };
+		673DC5011B9F216C005A5403 /* PLXAttributeConstraintVisualFormatParserSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4B11B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatParserSpec.m */; };
+		673DC5021B9F216C005A5403 /* PLAttributeConstraintVisualFormatLexerStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 673DC4B51B9F11C4005A5403 /* PLAttributeConstraintVisualFormatLexerStub.m */; };
+		E7BD283CB20CFF291DCB175A /* libPods-PLXVisualAttributeConstraintsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDA52A6E92236CFBCB9C8A6 /* libPods-PLXVisualAttributeConstraintsTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		673DC4F71B9F20C5005A5403 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 187507A0179817CB00463B60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 187507A7179817CB00463B60;
+			remoteInfo = PLXVisualAttributeConstraints;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14691F7423784F9BAC177E3B /* libPods-PLVisualAttributeConstraintsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLVisualAttributeConstraintsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1819E60317981AEC00AF37B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		187507A8179817CB00463B60 /* PLXVisualAttributeConstraints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PLXVisualAttributeConstraints.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		187507AB179817CB00463B60 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		187507AD179817CB00463B60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		187507AF179817CB00463B60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		293627F681F2DF1837AA4D86 /* Pods-PLXVisualAttributeConstraintsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLXVisualAttributeConstraintsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PLXVisualAttributeConstraintsTests/Pods-PLXVisualAttributeConstraintsTests.release.xcconfig"; sourceTree = "<group>"; };
+		46E2F312E352C24CB00D0AC0 /* Pods-PLXVisualAttributeConstraintsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PLXVisualAttributeConstraintsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PLXVisualAttributeConstraintsTests/Pods-PLXVisualAttributeConstraintsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		673DC4A71B9F11C4005A5403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		673DC4A91B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatLexerSpecHelpers.h; sourceTree = "<group>"; };
+		673DC4AA1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatLexerSpecHelpers.m; sourceTree = "<group>"; };
+		673DC4AB1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatLibSpecHelpers.h; sourceTree = "<group>"; };
+		673DC4AC1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatLibSpecHelpers.m; sourceTree = "<group>"; };
+		673DC4AF1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatLexerSpec.m; sourceTree = "<group>"; };
+		673DC4B01B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatLibSpec.m; sourceTree = "<group>"; };
+		673DC4B11B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatParserSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatParserSpec.m; sourceTree = "<group>"; };
+		673DC4B41B9F11C4005A5403 /* PLAttributeConstraintVisualFormatLexerStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLAttributeConstraintVisualFormatLexerStub.h; sourceTree = "<group>"; };
+		673DC4B51B9F11C4005A5403 /* PLAttributeConstraintVisualFormatLexerStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLAttributeConstraintVisualFormatLexerStub.m; sourceTree = "<group>"; };
+		673DC4BF1B9F1E9E005A5403 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		673DC4C01B9F1E9E005A5403 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		673DC4C11B9F1E9E005A5403 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		673DC4C31B9F1E9E005A5403 /* guy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guy.png; sourceTree = "<group>"; };
+		673DC4C41B9F1E9E005A5403 /* PLXDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXDemoView.h; sourceTree = "<group>"; };
+		673DC4C51B9F1E9E005A5403 /* PLXDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXDemoView.m; sourceTree = "<group>"; };
+		673DC4C61B9F1E9E005A5403 /* PLXDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXDemoViewController.h; sourceTree = "<group>"; };
+		673DC4C71B9F1E9E005A5403 /* PLXDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXDemoViewController.m; sourceTree = "<group>"; };
+		673DC4CA1B9F1E9E005A5403 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		673DC4CB1B9F1E9E005A5403 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		673DC4CC1B9F1E9E005A5403 /* PLXAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAppDelegate.h; sourceTree = "<group>"; };
+		673DC4CD1B9F1E9E005A5403 /* PLXAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAppDelegate.m; sourceTree = "<group>"; };
+		673DC4D11B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatAtom.h; sourceTree = "<group>"; };
+		673DC4D21B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatAtom.m; sourceTree = "<group>"; };
+		673DC4D31B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatLexer.h; sourceTree = "<group>"; };
+		673DC4D41B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatLexer.m; sourceTree = "<group>"; };
+		673DC4D51B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatLexerProtocol.h; sourceTree = "<group>"; };
+		673DC4D61B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXAttributeConstraintVisualFormatParser.h; sourceTree = "<group>"; };
+		673DC4D71B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXAttributeConstraintVisualFormatParser.m; sourceTree = "<group>"; };
+		673DC4D81B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLXConstraintLayoutAttributeMapper.h; sourceTree = "<group>"; };
+		673DC4D91B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLXConstraintLayoutAttributeMapper.m; sourceTree = "<group>"; };
+		673DC4DA1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PLXVisualAttributeConstraints.h"; sourceTree = "<group>"; };
+		673DC4DB1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PLXVisualAttributeConstraints.m"; sourceTree = "<group>"; };
+		673DC4DC1B9F1E9E005A5403 /* PLXVisualAttributeConstraints-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PLXVisualAttributeConstraints-Info.plist"; sourceTree = "<group>"; };
+		673DC4DD1B9F1E9E005A5403 /* PLXVisualAttributeConstraints-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PLXVisualAttributeConstraints-Prefix.pch"; sourceTree = "<group>"; };
+		673DC4F11B9F20C5005A5403 /* PLXVisualAttributeConstraintsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PLXVisualAttributeConstraintsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		673DC4F41B9F20C5005A5403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673DC4FC1B9F2131005A5403 /* PLXVisualAttributeConstraintsTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PLXVisualAttributeConstraintsTests-Prefix.pch"; sourceTree = "<group>"; };
+		9FDA52A6E92236CFBCB9C8A6 /* libPods-PLXVisualAttributeConstraintsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PLXVisualAttributeConstraintsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187507A5179817CB00463B60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187507AC179817CB00463B60 /* UIKit.framework in Frameworks */,
+				187507AE179817CB00463B60 /* Foundation.framework in Frameworks */,
+				187507B0179817CB00463B60 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673DC4EE1B9F20C5005A5403 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7BD283CB20CFF291DCB175A /* libPods-PLXVisualAttributeConstraintsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1875079F179817CB00463B60 = {
+			isa = PBXGroup;
+			children = (
+				673DC4A51B9F11C4005A5403 /* PLXVisualAttributeConstraintsTests */,
+				673DC4761B9F11A5005A5403 /* PLXVisualAttributeConstraints */,
+				187507AA179817CB00463B60 /* Frameworks */,
+				187507A9179817CB00463B60 /* Products */,
+				48499E5AAB25905D4DFF041C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		187507A9179817CB00463B60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				187507A8179817CB00463B60 /* PLXVisualAttributeConstraints.app */,
+				673DC4F11B9F20C5005A5403 /* PLXVisualAttributeConstraintsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		187507AA179817CB00463B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				187507AB179817CB00463B60 /* UIKit.framework */,
+				187507AD179817CB00463B60 /* Foundation.framework */,
+				187507AF179817CB00463B60 /* CoreGraphics.framework */,
+				1819E60317981AEC00AF37B9 /* SenTestingKit.framework */,
+				14691F7423784F9BAC177E3B /* libPods-PLVisualAttributeConstraintsTests.a */,
+				9FDA52A6E92236CFBCB9C8A6 /* libPods-PLXVisualAttributeConstraintsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48499E5AAB25905D4DFF041C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46E2F312E352C24CB00D0AC0 /* Pods-PLXVisualAttributeConstraintsTests.debug.xcconfig */,
+				293627F681F2DF1837AA4D86 /* Pods-PLXVisualAttributeConstraintsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		673DC4761B9F11A5005A5403 /* PLXVisualAttributeConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4BF1B9F1E9E005A5403 /* Default-568h@2x.png */,
+				673DC4C01B9F1E9E005A5403 /* Default.png */,
+				673DC4C11B9F1E9E005A5403 /* Default@2x.png */,
+				673DC4C21B9F1E9E005A5403 /* Demo */,
+				673DC4C81B9F1E9E005A5403 /* en.lproj */,
+				673DC4CB1B9F1E9E005A5403 /* main.m */,
+				673DC4CC1B9F1E9E005A5403 /* PLXAppDelegate.h */,
+				673DC4CD1B9F1E9E005A5403 /* PLXAppDelegate.m */,
+				673DC4CE1B9F1E9E005A5403 /* PLXVisualAttributeConstraints */,
+				673DC4DC1B9F1E9E005A5403 /* PLXVisualAttributeConstraints-Info.plist */,
+				673DC4DD1B9F1E9E005A5403 /* PLXVisualAttributeConstraints-Prefix.pch */,
+			);
+			path = PLXVisualAttributeConstraints;
+			sourceTree = "<group>";
+		};
+		673DC4A51B9F11C4005A5403 /* PLXVisualAttributeConstraintsTests */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4FC1B9F2131005A5403 /* PLXVisualAttributeConstraintsTests-Prefix.pch */,
+				673DC4F31B9F20C5005A5403 /* Supporting Files */,
+				673DC4A61B9F11C4005A5403 /* InfoPlist.strings */,
+				673DC4A81B9F11C4005A5403 /* Helpers */,
+				673DC4AF1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpec.m */,
+				673DC4B01B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpec.m */,
+				673DC4B11B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatParserSpec.m */,
+				673DC4B31B9F11C4005A5403 /* Stubs */,
+			);
+			path = PLXVisualAttributeConstraintsTests;
+			sourceTree = "<group>";
+		};
+		673DC4A81B9F11C4005A5403 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4A91B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.h */,
+				673DC4AA1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.m */,
+				673DC4AB1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.h */,
+				673DC4AC1B9F11C4005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		673DC4B31B9F11C4005A5403 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4B41B9F11C4005A5403 /* PLAttributeConstraintVisualFormatLexerStub.h */,
+				673DC4B51B9F11C4005A5403 /* PLAttributeConstraintVisualFormatLexerStub.m */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		673DC4C21B9F1E9E005A5403 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4C31B9F1E9E005A5403 /* guy.png */,
+				673DC4C41B9F1E9E005A5403 /* PLXDemoView.h */,
+				673DC4C51B9F1E9E005A5403 /* PLXDemoView.m */,
+				673DC4C61B9F1E9E005A5403 /* PLXDemoViewController.h */,
+				673DC4C71B9F1E9E005A5403 /* PLXDemoViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		673DC4C81B9F1E9E005A5403 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4C91B9F1E9E005A5403 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		673DC4CE1B9F1E9E005A5403 /* PLXVisualAttributeConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4CF1B9F1E9E005A5403 /* Internal */,
+				673DC4DA1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.h */,
+				673DC4DB1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.m */,
+			);
+			path = PLXVisualAttributeConstraints;
+			sourceTree = "<group>";
+		};
+		673DC4CF1B9F1E9E005A5403 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4D01B9F1E9E005A5403 /* Parsing */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		673DC4D01B9F1E9E005A5403 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4D11B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.h */,
+				673DC4D21B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.m */,
+				673DC4D31B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.h */,
+				673DC4D41B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.m */,
+				673DC4D51B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexerProtocol.h */,
+				673DC4D61B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.h */,
+				673DC4D71B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.m */,
+				673DC4D81B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.h */,
+				673DC4D91B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.m */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		673DC4F31B9F20C5005A5403 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				673DC4F41B9F20C5005A5403 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		187507A7179817CB00463B60 /* PLXVisualAttributeConstraints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 187507C5179817CC00463B60 /* Build configuration list for PBXNativeTarget "PLXVisualAttributeConstraints" */;
+			buildPhases = (
+				187507A4179817CB00463B60 /* Sources */,
+				187507A5179817CB00463B60 /* Frameworks */,
+				187507A6179817CB00463B60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PLXVisualAttributeConstraints;
+			productName = PLVisualAttributeConstraints;
+			productReference = 187507A8179817CB00463B60 /* PLXVisualAttributeConstraints.app */;
+			productType = "com.apple.product-type.application";
+		};
+		673DC4F01B9F20C5005A5403 /* PLXVisualAttributeConstraintsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673DC4F91B9F20C5005A5403 /* Build configuration list for PBXNativeTarget "PLXVisualAttributeConstraintsTests" */;
+			buildPhases = (
+				E5D47186E233E135EA393FEF /* Check Pods Manifest.lock */,
+				673DC4ED1B9F20C5005A5403 /* Sources */,
+				673DC4EE1B9F20C5005A5403 /* Frameworks */,
+				673DC4EF1B9F20C5005A5403 /* Resources */,
+				847599E877152F5AB1551D39 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				673DC4F81B9F20C5005A5403 /* PBXTargetDependency */,
+			);
+			name = PLXVisualAttributeConstraintsTests;
+			productName = PLXVisualAttributeConstraintsTests;
+			productReference = 673DC4F11B9F20C5005A5403 /* PLXVisualAttributeConstraintsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		187507A0179817CB00463B60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Polidea;
+				TargetAttributes = {
+					673DC4F01B9F20C5005A5403 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 187507A7179817CB00463B60;
+					};
+				};
+			};
+			buildConfigurationList = 187507A3179817CB00463B60 /* Build configuration list for PBXProject "PLXVisualAttributeConstraints" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1875079F179817CB00463B60;
+			productRefGroup = 187507A9179817CB00463B60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				187507A7179817CB00463B60 /* PLXVisualAttributeConstraints */,
+				673DC4F01B9F20C5005A5403 /* PLXVisualAttributeConstraintsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		187507A6179817CB00463B60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673DC4E01B9F1E9E005A5403 /* Default@2x.png in Resources */,
+				673DC4DE1B9F1E9E005A5403 /* Default-568h@2x.png in Resources */,
+				673DC4DF1B9F1E9E005A5403 /* Default.png in Resources */,
+				673DC4E11B9F1E9E005A5403 /* guy.png in Resources */,
+				673DC4E41B9F1E9E005A5403 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673DC4EF1B9F20C5005A5403 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		847599E877152F5AB1551D39 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PLXVisualAttributeConstraintsTests/Pods-PLXVisualAttributeConstraintsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D47186E233E135EA393FEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		187507A4179817CB00463B60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673DC4E31B9F1E9E005A5403 /* PLXDemoViewController.m in Sources */,
+				673DC4EB1B9F1E9E005A5403 /* NSLayoutConstraint+PLXVisualAttributeConstraints.m in Sources */,
+				673DC4E51B9F1E9E005A5403 /* main.m in Sources */,
+				673DC4E91B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatParser.m in Sources */,
+				673DC4E81B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatLexer.m in Sources */,
+				673DC4E21B9F1E9E005A5403 /* PLXDemoView.m in Sources */,
+				673DC4E61B9F1E9E005A5403 /* PLXAppDelegate.m in Sources */,
+				673DC4E71B9F1E9E005A5403 /* PLXAttributeConstraintVisualFormatAtom.m in Sources */,
+				673DC4EA1B9F1E9E005A5403 /* PLXConstraintLayoutAttributeMapper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673DC4ED1B9F20C5005A5403 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673DC4FF1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLexerSpec.m in Sources */,
+				673DC5021B9F216C005A5403 /* PLAttributeConstraintVisualFormatLexerStub.m in Sources */,
+				673DC4FE1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLibSpecHelpers.m in Sources */,
+				673DC5001B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLibSpec.m in Sources */,
+				673DC5011B9F216C005A5403 /* PLXAttributeConstraintVisualFormatParserSpec.m in Sources */,
+				673DC4FD1B9F216C005A5403 /* PLXAttributeConstraintVisualFormatLexerSpecHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		673DC4F81B9F20C5005A5403 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 187507A7179817CB00463B60 /* PLXVisualAttributeConstraints */;
+			targetProxy = 673DC4F71B9F20C5005A5403 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		673DC4A61B9F11C4005A5403 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673DC4A71B9F11C4005A5403 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		673DC4C91B9F1E9E005A5403 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673DC4CA1B9F1E9E005A5403 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		187507C3179817CC00463B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		187507C4179817CC00463B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		187507C6179817CC00463B60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PLXVisualAttributeConstraints/PLXVisualAttributeConstraints-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PLXVisualAttributeConstraints/PLXVisualAttributeConstraints-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		187507C7179817CC00463B60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PLXVisualAttributeConstraints/PLXVisualAttributeConstraints-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/PLXVisualAttributeConstraints/PLXVisualAttributeConstraints-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		673DC4FA1B9F20C5005A5403 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E2F312E352C24CB00D0AC0 /* Pods-PLXVisualAttributeConstraintsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "PLXVisualAttributeConstraintsTests/PLXVisualAttributeConstraintsTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PLXVisualAttributeConstraintsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLXVisualAttributeConstraints.app/PLXVisualAttributeConstraints";
+			};
+			name = Debug;
+		};
+		673DC4FB1B9F20C5005A5403 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 293627F681F2DF1837AA4D86 /* Pods-PLXVisualAttributeConstraintsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "PLXVisualAttributeConstraintsTests/PLXVisualAttributeConstraintsTests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = PLXVisualAttributeConstraintsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PLXVisualAttributeConstraints.app/PLXVisualAttributeConstraints";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		187507A3179817CB00463B60 /* Build configuration list for PBXProject "PLXVisualAttributeConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187507C3179817CC00463B60 /* Debug */,
+				187507C4179817CC00463B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		187507C5179817CC00463B60 /* Build configuration list for PBXNativeTarget "PLXVisualAttributeConstraints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				187507C6179817CC00463B60 /* Debug */,
+				187507C7179817CC00463B60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		673DC4F91B9F20C5005A5403 /* Build configuration list for PBXNativeTarget "PLXVisualAttributeConstraintsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673DC4FA1B9F20C5005A5403 /* Debug */,
+				673DC4FB1B9F20C5005A5403 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 187507A0179817CB00463B60 /* Project object */;
+}
