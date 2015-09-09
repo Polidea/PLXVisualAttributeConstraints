@@ -6,11 +6,11 @@ Pod::Spec.new do |spec|
   spec.homepage = 'https://github.com/Polidea/PLXVisualAttributeConstraints'
   spec.license = {
     :type => 'BSD',
-    :file => 'BSD.LICENSE'
+    :file => 'LICENSE'
   }
   spec.author = {
     "Polidea" => "kamil.jaworski@polidea.com"
-  },
+  }
   spec.platform = :ios, '6.0'
   spec.source = {
     :git => "https://github.com/Polidea/PLXVisualAttributeConstraints.git",
